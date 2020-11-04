@@ -4,12 +4,20 @@
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Unity WebGL Player | Mine</title>
-    <script src="Build/UnityLoader.js"></script>
-    <script>
-      UnityLoader.instantiate("unityContainer", "Build/JEFFTRYTTEN.github.io.json");
-    </script>
   </head>
-  <body>
-    <div id="unityContainer" style="width: 1100px; height: 700px; margin: auto"></div>
+  <body style="text-align: center">
+    <canvas id="unity-canvas" style="width: 1100px; height: 700px; background: #292727"></canvas>
+    <script src="Build/JEFFTRYTTEN.github.io.loader.js"></script>
+    <script>
+      createUnityInstance(document.querySelector("#unity-canvas"), {
+        dataUrl: "Build/JEFFTRYTTEN.github.io.data.gz",
+        frameworkUrl: "Build/JEFFTRYTTEN.github.io.framework.js.gz",
+        codeUrl: "Build/JEFFTRYTTEN.github.io.wasm.gz",
+        streamingAssetsUrl: "StreamingAssets",
+        companyName: "DefaultCompany",
+        productName: "Mine",
+        productVersion: "1.0",
+      });
+    </script>
   </body>
 </html>
