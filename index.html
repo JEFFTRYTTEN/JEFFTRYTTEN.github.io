@@ -44,9 +44,9 @@
          var buildUrl = "Build";
          var loaderUrl = buildUrl + "/JEFFTRYTTEN.github.io.loader.js";
          var config = {
-           dataUrl: buildUrl + "/b32b0ada453481c9ef7be6ab34b2decf.data.unityweb",
-           frameworkUrl: buildUrl + "/0fe98a1b18dbb88b44d9c7bc91029b22.js.unityweb",
-           codeUrl: buildUrl + "/946f706e25ead52f65dbb7b142737b99.wasm.unityweb",
+           dataUrl: buildUrl + "/547f6de9231e4eea8eff5ed712c3043e.data.unityweb",
+           frameworkUrl: buildUrl + "/1740dd5d0e9b21e911efe3e553c7295e.js.unityweb",
+           codeUrl: buildUrl + "/a15b7e87aa7de7811d913116c2da0810.wasm.unityweb",
            streamingAssetsUrl: "StreamingAssets",
            companyName: "DefaultCompany",
            productName: "Infinite Mine",
@@ -64,6 +64,7 @@
          } else {
              container.className = "unity-mobile";
          }
+         canvas.style.background = "url('" + buildUrl + "/e779ea70f46f94f60ec32c528c78600e.jpg.unityweb') center / cover";
          loadingBar.style.display = "block";
          var script = document.createElement("script");
          script.src = loaderUrl;
